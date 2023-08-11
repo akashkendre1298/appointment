@@ -1,0 +1,172 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Main container */
+.appointment-form {
+  margin: 0 auto;
+  padding: 13px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 5px 2px lightgray;
+
+  /* height: 100%; */
+}
+.title-margin {
+  margin-top: 0;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 18px;
+}
+
+/* Input styles */
+.input-group,
+.flex-input-group,
+.vital-input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.vital-flex-div-all {
+  display: flex;
+  gap: 10px;
+}
+.vital-input {
+  width: 50px;
+}
+
+.input-group select,
+.flex-input-group input,
+.vital-input-group input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.input-group-appointment-title {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Flex input section */
+.flex-input-section {
+  /* display: flex; */
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Button styles */
+.button-group {
+  display: flex;
+  justify-content: center;
+}
+
+.button-group button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #2c7fb2;
+}
+.date-time-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  margin-top: 26px;
+}
+.flex-input-group-time {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 120px;
+}
+.reason-note-for-doc {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+.vital-input-reason {
+  width: 50%;
+}
+.title-clr {
+  color: #2c7fb2;
+}
+.button-group button:last-child {
+  background-color: #2c7fb2;
+  color: #fff;
+}
+
+.first-section-right-side {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+}
+.select-clr {
+  color: #989797;
+}
+.patient-name-id {
+  display: flex;
+  justify-content: space-between;
+  gap: 55px;
+}
+.patient-name-right-side p {
+  margin: 0;
+}
+
+/* Responsive styles */
+@media (min-width: 320px) and (max-width: 425px) {
+  .input-group,
+  .flex-input-group,
+  .vital-input-group {
+    /* flex-direction: column; */
+    width: 150px;
+  }
+
+  .input-group select,
+  .flex-input-group input,
+  .vital-input-group input {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+
+  .flex-input-section {
+    /* flex-direction: column; */
+  }
+
+  .appointment-form {
+    width: 88%;
+    margin: 1em;
+  }
+
+  .first-section-right-side {
+    display: block;
+  }
+  .date-time-flex {
+    display: flex;
+    gap: 50px;
+    justify-content: start;
+  }
+  .patient-name-id {
+    display: flex;
+    gap: 90px;
+    justify-content: start;
+  }
+  .section {
+    display: block;
+  }
+  .reason-note-for-doc {
+    display: flex;
+    gap: 18px;
+    justify-content: start;
+  }
+}

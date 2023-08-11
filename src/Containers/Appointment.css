@@ -1,0 +1,108 @@
+.main-div-for-appointment {
+  display: flex;
+  gap: 10px;
+  height: 450px;
+
+  width: 100%;
+  justify-content: center;
+  margin-top: 30px;
+}
+.width-div {
+  width: 75em;
+  display: flex;
+  gap: 50px;
+}
+.left-side-div {
+  border: 1px solid lightgray;
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 2px lightgray;
+  /* height: 450px; */
+  overflow-y: hidden;
+  margin-left: 15px;
+}
+.search-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 20px;
+  width: 200px;
+  color: #cbc9c9;
+}
+
+.search-icon {
+  margin-right: 8px;
+  color: #cbc9c9;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon svg {
+  width: 1em;
+  height: 1em;
+}
+.search-view-profile {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.btn-in-left-side {
+  border-radius: 20px;
+  background-color: #2c7fb2;
+  color: white;
+  outline: none;
+  border: 1px solid lightgray;
+  font-size: 12px;
+  height: 2.6em;
+  width: 12em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 2px;
+  font-size: 10px;
+  color: #cbc9c9;
+}
+.Profile-Details {
+  display: flex;
+  gap: 35px;
+}
+.left-img-name-div {
+  align-items: center;
+  text-align: center;
+}
+.loc-cont p {
+  margin: 0;
+  padding-top: 0;
+  line-height: 35px;
+  color: #989797;
+  font-size: 13px;
+}
+.patient-name {
+  color: #989797;
+  font-size: 13px;
+}
+.Right-side-div {
+  height: 520px;
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+  .main-div-for-appointment {
+    display: block;
+    width: 100%;
+  }
+  .width-div {
+    display: block;
+    width: 100%;
+  }
+  .btn-in-left-side {
+    width: 9em;
+    font-size: 12px;
+  }
+}
